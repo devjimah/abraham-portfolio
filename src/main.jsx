@@ -303,10 +303,6 @@ function App() {
 
       <main id="top">
         <section className="hero" aria-labelledby="hero-title">
-          <div className="eyebrow reveal">
-            <span className="status-dot" />
-            Kumasi, Ghana · Available for meaningful work
-          </div>
           <h1 id="hero-title" className="reveal delay-1">
             I build products
             <br />

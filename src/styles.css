@@ -104,7 +104,6 @@ footer a:hover {
   padding: 6vh 0 11vh;
 }
 
-.eyebrow,
 .label,
 .award,
 .period,
@@ -112,22 +111,6 @@ footer a:hover {
   font-family: "DM Mono", monospace;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-}
-
-.eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--muted);
-  font-size: 11px;
-}
-
-.status-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 5px rgb(219 76 47 / 10%);
 }
 
 h1 {
