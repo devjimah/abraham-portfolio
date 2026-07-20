@@ -303,10 +303,16 @@ function App() {
 
       <main id="top">
         <section className="hero" aria-labelledby="hero-title">
-          <h1 id="hero-title" className="reveal delay-1">
-            I build products
-            <br />
-            that feel <em>obvious.</em>
+          <div className="hero-meta reveal">
+            <span>Frontend engineer</span>
+            <span>Web / Mobile / On-chain</span>
+          </div>
+          <h1 id="hero-title" className="hero-title">
+            <span className="hero-line hero-line-one">I build</span>
+            <span className="hero-line hero-line-two">digital products</span>
+            <span className="hero-line hero-line-three">
+              that feel <em>obvious.</em>
+            </span>
           </h1>
           <div className="hero-bottom reveal delay-2">
             <p>
