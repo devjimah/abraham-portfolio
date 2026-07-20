@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import {
   ArrowDown,
   ArrowUpRight,
+  Github,
   Instagram,
   Linkedin,
   Mail,
@@ -44,22 +45,28 @@ const experience = [
     note: "Building production-ready interfaces with React, component-driven architecture, and modern engineering practices.",
   },
   {
-    period: "2024",
+    period: "Sep — Dec 2024",
     role: "Software Developer Intern",
     company: "Noni Hub",
     note: "Led frontend delivery for an ERP system and mentored junior developers through practical training sessions.",
   },
   {
-    period: "2023",
+    period: "Sep — Dec 2023",
     role: "Frontend Developer Intern",
     company: "Noni Hub",
     note: "Led web development sessions for trainees.",
   },
   {
-    period: "2021 — 2022",
+    period: "Jan — May 2022",
+    role: "Frontend Developer Intern",
+    company: "Xcelsz Property Solutions",
+    note: "Built responsive and dynamic web pages with HTML, CSS, PHP, and Laravel.",
+  },
+  {
+    period: "Sep — Dec 2021",
     role: "Frontend Developer",
-    company: "Xcelsz Property Solutions · Northway Commerce Hub",
-    note: "Built responsive web experiences and helped ship an MVP dashboard in close collaboration with product teams.",
+    company: "Northway Commerce Hub",
+    note: "Designed and implemented the React dashboard for the company’s first minimum viable product.",
   },
 ];
 
@@ -98,6 +105,12 @@ function XIcon({ size = 19, strokeWidth = 1.5 }) {
 }
 
 const socials = [
+  {
+    name: "GitHub",
+    handle: "@devjimah",
+    href: "https://github.com/devjimah",
+    icon: Github,
+  },
   {
     name: "Instagram",
     handle: "@a.j_mczorwi",
@@ -284,25 +297,21 @@ function App() {
         <nav aria-label="Main navigation">
           <a href="#work">Work</a>
           <a href="#experience">Experience</a>
-          <a href="#socials">Socials</a>
+          <a href="/abraham-jimah-zorwi-resume.pdf" target="_blank" rel="noreferrer">Résumé</a>
         </nav>
       </header>
 
       <main id="top">
         <section className="hero" aria-labelledby="hero-title">
-          <div className="eyebrow reveal">
-            <span className="status-dot" />
-            Kumasi, Ghana · Available for meaningful work
-          </div>
           <h1 id="hero-title" className="reveal delay-1">
-            I build interfaces
+            I build products
             <br />
             that feel <em>obvious.</em>
           </h1>
           <div className="hero-bottom reveal delay-2">
             <p>
-              I’m <strong>Abraham Jimah Zorwi</strong>, a frontend engineer creating
-              responsive products across web, mobile, and emerging technology.
+              I’m <strong>Abraham Jimah Zorwi</strong>, a frontend engineer building
+              responsive products across web, mobile, and on-chain ecosystems.
             </p>
             <a className="round-link" href="#work" aria-label="View selected work">
               <ArrowDown size={20} strokeWidth={1.5} />
@@ -312,7 +321,7 @@ function App() {
 
         <section className="section" id="work" aria-labelledby="work-title">
           <div className="section-heading">
-            <p className="label">01 / Selected work</p>
+            <p className="label">01 / Award-winning work</p>
             <h2 id="work-title">Built to solve real problems.</h2>
           </div>
           <div className="work-list">
@@ -333,7 +342,7 @@ function App() {
         <section className="section split-section" id="experience" aria-labelledby="experience-title">
           <div className="section-heading sticky-heading">
             <p className="label">02 / Experience</p>
-            <h2 id="experience-title">Learning by shipping.</h2>
+            <h2 id="experience-title">Experience shaped by delivery.</h2>
           </div>
           <ExperienceRoadmap />
         </section>
@@ -372,8 +381,6 @@ function App() {
               <figure className="image-fragment" aria-hidden="true">
                 <img src="/images/social-connect.webp" alt="" loading="lazy" />
               </figure>
-              <span className="fragment-line" aria-hidden="true" />
-              <span className="fragment-index" aria-hidden="true">01</span>
             </div>
             <div className="social-list">
               {socials.map(({ name, handle, href, icon: Icon }) => (
